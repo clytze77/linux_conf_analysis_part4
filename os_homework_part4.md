@@ -229,60 +229,60 @@
      Rpmsg drivers
     
 ##SOC (System On Chip) specific Drivers的配置   
-    #
-    # SOC (System On Chip) specific Drivers
-    #
-    # CONFIG_SOC_TI is not set
-    # CONFIG_PM_DEVFREQ is not set
-    # CONFIG_EXTCON is not set
-    # CONFIG_MEMORY is not set
-    # CONFIG_IIO is not set
-    # CONFIG_NTB is not set
-    # CONFIG_VME_BUS is not set
-    # CONFIG_PWM is not set
-    # CONFIG_IPACK_BUS is not set
-    # CONFIG_RESET_CONTROLLER is not set
-    # CONFIG_FMC is not set
+    
+     SOC (System On Chip) specific Drivers
+    
+     CONFIG_SOC_TI is not set
+     CONFIG_PM_DEVFREQ is not set
+     CONFIG_EXTCON is not set
+     CONFIG_MEMORY is not set
+     CONFIG_IIO is not set
+     CONFIG_NTB is not set
+     CONFIG_VME_BUS is not set
+     CONFIG_PWM is not set
+     CONFIG_IPACK_BUS is not set
+     CONFIG_RESET_CONTROLLER is not set
+     CONFIG_FMC is not set
 ##PHY Subsystem的配置     
-    #
-    # PHY Subsystem
-    #PHY ( 物理层控制芯片)
-    # CONFIG_GENERIC_PHY is not set
-    # CONFIG_BCM_KONA_USB2_PHY is not set
-    # CONFIG_POWERCAP is not set
-    # CONFIG_MCB is not set
-    # CONFIG_THUNDERBOLT is not set
     
-    #
-    # Android
-    #
-    # CONFIG_ANDROID is not set
+     PHY Subsystem
+     PHY ( 物理层控制芯片)
+     CONFIG_GENERIC_PHY is not set
+     CONFIG_BCM_KONA_USB2_PHY is not set
+     CONFIG_POWERCAP is not set
+     CONFIG_MCB is not set
+     CONFIG_THUNDERBOLT is not set
     
-    #
-    # Firmware Drivers 固件驱动
-    #
-    # CONFIG_EDD is not set
-    # CONFIG_FIRMWARE_MEMMAP is not set
-    # CONFIG_DELL_RBU is not set
-    # CONFIG_DCDBAS is not set
-    # CONFIG_GOOGLE_FIRMWARE is not set
+    
+     Android
+    
+     CONFIG_ANDROID is not set
+    
+    
+     Firmware Drivers 固件驱动
+    
+     CONFIG_EDD is not set
+     CONFIG_FIRMWARE_MEMMAP is not set
+     CONFIG_DELL_RBU is not set
+     CONFIG_DCDBAS is not set
+     CONFIG_GOOGLE_FIRMWARE is not set
 
 ##File systems的配置    
-    #
-    # File systems
-    #
+    
+     File systems
+    
     CONFIG_DCACHE_WORD_ACCESS=y
-    # CONFIG_FS_POSIX_ACL is not set
-    # CONFIG_FILE_LOCKING is not set
-    # CONFIG_FSNOTIFY is not set
-    # CONFIG_DNOTIFY is not set 基于目录的文件变化的通知机制
-    # CONFIG_INOTIFY_USER is not set 用户空间的Inotify支持。（notify 是一个 Linux特性，它监控文件系统操作，比如读取、写入和创建）
-    # CONFIG_FANOTIFY is not set
-    # CONFIG_QUOTA is not set
-    # CONFIG_QUOTACTL is not set
-    # CONFIG_AUTOFS4_FS is not set
-    # CONFIG_FUSE_FS is not set ：FUSE（Filesystem in Userspace），允许在用户空间实现一个文件系统，如果打算开发一个自己的文件系统或使用一个机遇FUSE的文件系统，可以打开，这里不设置。
-    # CONFIG_OVERLAY_FS is not set
+    CONFIG_FS_POSIX_ACL is not set
+    CONFIG_FILE_LOCKING is not set
+    CONFIG_FSNOTIFY is not set
+    CONFIG_DNOTIFY is not set 基于目录的文件变化的通知机制
+    CONFIG_INOTIFY_USER is not set 用户空间的Inotify支持。（notify 是一个 Linux特性，它监控文件系统操作，比如读取、写入和创建）
+    CONFIG_FANOTIFY is not set
+    CONFIG_QUOTA is not set
+    CONFIG_QUOTACTL is not set
+    CONFIG_AUTOFS4_FS is not set
+    CONFIG_FUSE_FS is not set ：FUSE（Filesystem in Userspace），允许在用户空间实现一个文件系统，如果打算开发一个自己的文件系统或使用一个机遇FUSE的文件系统，可以打开，这里不设置。
+    CONFIG_OVERLAY_FS is not set
     
 
 <h1 id="2">实验中遇到的问题及解决办法</h1>
