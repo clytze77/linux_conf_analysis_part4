@@ -6,7 +6,7 @@
 这篇文档介绍的是编译[Linux4.0.4][1]源码时的部分配置文件的说明文档,参考的配置文件[myconfig2][2]的第四部分，该配置条件下可保证完成内核的上网功能。主要包含I2C协议的配置，图形方面的配置和时钟源驱动的配置等。
 <h1 id="1">配置解析</h1>
 ##Serial drivers的配置
-    # Serial drivers
+    Serial drivers
     
     CONFIG_SERIAL_8250=y
     #8250芯片串口驱动配置
@@ -56,7 +56,7 @@
     CONFIG_XILLYBUS is not set
 ##I2C support的配置
     
-    # I2C support
+    I2C support
     #用于感知硬件状态，比如温度，风扇转速。
     I2C是Philips极力推动的微控制应用中使用的低速串行总线协议。
     如果要支持Video For Linux，该项必选。这里不配置
@@ -81,7 +81,7 @@
     CONFIG_PPS_CLIENT_GPIO is not set
     
    
-    # PPS generators support
+    PPS generators support
     
 ##PTP clock support的配置  
     
@@ -91,7 +91,7 @@
     --PTP（Precision Time Protocol，精确时间协议）是一个时间同步的协议，1588是网络测量和控制
     系统的精密时钟同步协议标准，采用PTP协议，这里的配置PTP时钟，是为了网络通信中，保持设备的时间和频率同步。
     
-    # Enable PHYLIB and NETWORK_PHY_TIMESTAMPING to see the additional clocks.
+    Enable PHYLIB and NETWORK_PHY_TIMESTAMPING to see the additional clocks.
     
     CONFIG_PTP_1588_CLOCK_PCH is not set
     CONFIG_ARCH_WANT_OPTIONAL_GPIOLIB=y 
@@ -112,7 +112,7 @@
     CONFIG_BCMA_POSSIBLE=y --？？
     
     
-    # Broadcom specific AMBA
+    Broadcom specific AMBA
     
     CONFIG_BCMA is not set
     
@@ -158,7 +158,7 @@
     CONFIG_VGASTATE is not set 显示状态不需要配置
     
     
-    # Console display driver support
+    Console display driver support
     
     CONFIG_VGA_CONSOLE=y
     CONFIG_VGACON_SOFT_SCROLLBACK is not set
@@ -196,7 +196,7 @@
      CONFIG_VIRTIO_MMIO is not set
     
     
-    # Microsoft Hyper-V guest support
+     Microsoft Hyper-V guest support
     
      CONFIG_STAGING is not set
      CONFIG_X86_PLATFORM_DEVICES is not set
