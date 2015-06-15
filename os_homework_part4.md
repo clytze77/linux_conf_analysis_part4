@@ -78,7 +78,9 @@
     #PPS客户端支持
     CONFIG_PPS_CLIENT_KTIMER is not set
     CONFIG_PPS_CLIENT_LDISC is not set
+    #客户端的终端设备
     CONFIG_PPS_CLIENT_GPIO is not set
+    #客户端的通用输入输出
     
    
    
@@ -114,7 +116,9 @@
     # Sonics Silicon Backplane
     
     CONFIG_SSB is not set
-    CONFIG_BCMA_POSSIBLE=y 
+    #single_side_band单边带
+    CONFIG_BCMA_POSSIBLE=y
+    #这些驱动用于使用基于AMBA协议的总线
     
     
     Broadcom specific AMBA
@@ -161,11 +165,14 @@
      #媒体设备支持
 ##Graphics support 的配置    
     
-    Graphics support --图形支持，支持VGA接口，最多使用的GPU为16
+    Graphics support 
+    #图形支持，支持VGA接口，最多使用的GPU为16
     
     CONFIG_AGP is not set
+    #PC的图形系列接口的一种，全称Accelerated Graphic Ports
     CONFIG_VGA_ARB=y
     CONFIG_VGA_ARB_MAX_GPUS=16
+    #最大值为16
     
     
     Direct Rendering Manager
@@ -185,6 +192,7 @@
     Console display driver support
     
     CONFIG_VGA_CONSOLE=y
+    #VGA的控制台
     CONFIG_VGACON_SOFT_SCROLLBACK is not set
     CONFIG_DUMMY_CONSOLE=y 
     #控制台演示驱动，设置虚拟演示台的宽度与长度分别为80和25.
@@ -195,11 +203,12 @@
     
     
     HID support
-    #人力工程学设备，不需要
+    #人力工程学设备
     CONFIG_HID is not set
     CONFIG_USB_OHCI_LITTLE_ENDIAN=y
-    注册开放型USB主机控制器驱动
+    #注册开放型USB主机控制器驱动
      CONFIG_USB_SUPPORT is not set
+    #支持USV接口
      CONFIG_UWB is not set
      CONFIG_MMC is not set
      CONFIG_MEMSTICK is not set
@@ -207,7 +216,8 @@
      CONFIG_ACCESSIBILITY is not set
      CONFIG_INFINIBAND is not set
      CONFIG_EDAC is not set
-     CONFIG_RTC_LIB=y --引入函数库，提供一些辅助函数，闰年计算，日期有效性验证之类的。
+     CONFIG_RTC_LIB=y 
+     #引入函数库，提供一些辅助函数，闰年计算，日期有效性验证之类的。
      CONFIG_RTC_CLASS is not set
      CONFIG_DMADEVICES is not set
      CONFIG_AUXDISPLAY is not set
