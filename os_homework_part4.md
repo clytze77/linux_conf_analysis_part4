@@ -7,9 +7,9 @@
 <h1 id="1">配置解析</h1>
 ##Serial drivers的配置
     # Serial drivers
-    #
-    #8250芯片串口驱动配置
+    
     CONFIG_SERIAL_8250=y
+    #8250芯片串口驱动配置
     CONFIG_SERIAL_8250_DEPRECATED_OPTIONS=y
     # CONFIG_SERIAL_8250_CONSOLE is not set
     CONFIG_SERIAL_8250_PCI=y
@@ -64,26 +64,27 @@
     # CONFIG_SPMI is not set
     # CONFIG_HSI is not set
     
-    #
-    # PPS support --开发对PPS的支持，但禁选了调试功能
-    #
+    
+    PPS support 
     CONFIG_PPS=y
-    # CONFIG_PPS_DEBUG is not set
-    # CONFIG_NTP_PPS is not set
+    #开发对PPS的支持
+    CONFIG_PPS_DEBUG is not set
+    #PPS调试功能
+    CONFIG_NTP_PPS is not set
     
-    #
-    # PPS clients support
-    #
-    # CONFIG_PPS_CLIENT_KTIMER is not set
-    # CONFIG_PPS_CLIENT_LDISC is not set
-    # CONFIG_PPS_CLIENT_GPIO is not set
     
-    #
+    PPS clients support
+    #PPS客户端支持
+    CONFIG_PPS_CLIENT_KTIMER is not set
+    CONFIG_PPS_CLIENT_LDISC is not set
+    CONFIG_PPS_CLIENT_GPIO is not set
+    
+   
     # PPS generators support
-    #
+    
 ##PTP clock support的配置  
-    #
-    # PTP clock support
+    
+    PTP clock support
     #
     CONFIG_PTP_1588_CLOCK=y
     --PTP（Precision Time Protocol，精确时间协议）是一个时间同步的协议，1588是网络测量和控制
