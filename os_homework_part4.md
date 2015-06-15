@@ -271,16 +271,23 @@
      File systems
     
     CONFIG_DCACHE_WORD_ACCESS=y
+    #高速缓存通道
     CONFIG_FS_POSIX_ACL is not set
+    #文件中POSIX消息队列
     CONFIG_FILE_LOCKING is not set
+    #锁定文件
     CONFIG_FSNOTIFY is not set
-    CONFIG_DNOTIFY is not set 基于目录的文件变化的通知机制
-    CONFIG_INOTIFY_USER is not set 用户空间的Inotify支持。（notify 是一个 Linux特性，它监控文件系统操作，比如读取、写入和创建）
+    #文件监控
+    CONFIG_DNOTIFY is not set 
+    #基于目录的文件变化的通知机制
+    CONFIG_INOTIFY_USER is not set 
+    #用户空间的Inotify支持。（notify 是一个 Linux特性，它监控文件系统操作，比如读取、写入和创建）
     CONFIG_FANOTIFY is not set
     CONFIG_QUOTA is not set
     CONFIG_QUOTACTL is not set
     CONFIG_AUTOFS4_FS is not set
-    CONFIG_FUSE_FS is not set ：FUSE（Filesystem in Userspace），允许在用户空间实现一个文件系统，如果打算开发一个自己的文件系统或使用一个机遇FUSE的文件系统，可以打开，这里不设置。
+    CONFIG_FUSE_FS is not set 
+    #FUSE（Filesystem in Userspace），允许在用户空间实现一个文件系统，如果打算开发一个自己的文件系统或使用一个机遇FUSE的文件     #系统，可以打开，这里不设置。
     CONFIG_OVERLAY_FS is not set
     
 
