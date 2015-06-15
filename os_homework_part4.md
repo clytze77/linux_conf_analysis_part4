@@ -11,17 +11,16 @@
     CONFIG_SERIAL_8250=y
     #8250芯片串口驱动配置
     CONFIG_SERIAL_8250_DEPRECATED_OPTIONS=y
+    #8250芯片禁用
     CONFIG_SERIAL_8250_CONSOLE is not set
+    #8250芯片串口控制台
     CONFIG_SERIAL_8250_PCI=y
     CONFIG_SERIAL_8250_NR_UARTS=4
+    #改变最大串口数量默认值
     CONFIG_SERIAL_8250_RUNTIME_UARTS=4
-    #linux发行的8250驱动一般默认限制检测的最大串口数量是4，
-    #配置项RUNTIME_UARTS限制了这个数目，但如果安装了16个串口
-    #的串口卡来扩充机器的窗口数目，那么只能得到4个，解决的
-    #方法可以是重新配置内核并编译，但更方便的方法是通过内
-    #核启动参数8250_NR_UARTS=？？来改变默认数。
-    
+    #linux发行的8250驱动一般默认限制检测的最大串口数量是4
     CONFIG_SERIAL_8250_EXTENDED is not set
+    #拓展功能
     CONFIG_SERIAL_8250_DW is not set
 ##serial port support的配置 
     
