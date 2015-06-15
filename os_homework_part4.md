@@ -27,32 +27,53 @@
      Non-8250 serial port support 
     #支持对非8250串口驱动设备
     CONFIG_SERIAL_MFD_HSU is not set
+    #串口驱动的历史数据
     CONFIG_SERIAL_CORE=y 
     #仅仅配置串口内核，其他的串口设备不给予支持
     CONFIG_SERIAL_JSM is not set
+    #作业定序模块串口
     CONFIG_SERIAL_SCCNXP is not set
     CONFIG_SERIAL_TIMBERDALE is not set
     CONFIG_SERIAL_ALTERA_JTAGUART is not set
+    #JTAG UART的串口配置，开发板与PC之间调试、通信会用到这个IP核
     CONFIG_SERIAL_ALTERA_UART is not set
+    #通用异步接受/发送装置串口配置
+
     CONFIG_SERIAL_PCH_UART is not set
+    #收发时寻呼信道串口配置
     CONFIG_SERIAL_ARC is not set
+    #声音控制串口配置
     CONFIG_SERIAL_RP2 is not set
+    #无线串口配置
     CONFIG_SERIAL_FSL_LPUART is not set
+    #文本串口配置
     CONFIG_TTY_PRINTK is not set
+    #电传打字机的打印内核
     CONFIG_IPMI_HANDLER is not set
+    #智能平台管理接口的处理器
     CONFIG_HW_RANDOM is not set
+    #随机存储硬件的支持
     CONFIG_NVRAM is not set
+    #非易失随机存取存储器
     CONFIG_R3964 is not set
+    #使用西门子R3964协议的设备同步通信
     CONFIG_APPLICOM is not set
+    #公司生产的用于现场总线连接卡，一般都会设置使用上述的西门子R3964协议
     CONFIG_SONYPI is not set
     CONFIG_MWAVE is not set
     CONFIG_PC8736x_GPIO is not set
     CONFIG_NSC_GPIO is not set
+    #国际标准通用输入输出
     CONFIG_HANGCHECK_TIMER is not set
+    #定时器校正的配置
     CONFIG_TCG_TPM is not set
+    #可信平台模块的可信计算组织设置
     CONFIG_TELCLOCK is not set
+    #电子时钟的配置
     CONFIG_DEVPORT=y
+    #设备端口控制，用于识别外界连接
     CONFIG_XILLYBUS is not set
+    #总线设置
 ##I2C support的配置
     
     I2C support
