@@ -24,11 +24,12 @@
     # CONFIG_SERIAL_8250_EXTENDED is not set
     # CONFIG_SERIAL_8250_DW is not set
 ##serial port support的配置 
-    #
-    # Non-8250 serial port support --支持对非8250串口驱动设备
-    #
-    # CONFIG_SERIAL_MFD_HSU is not set
-    CONFIG_SERIAL_CORE=y --仅仅配置串口内核，其他的串口设备不给予支持
+    
+     Non-8250 serial port support 
+    #支持对非8250串口驱动设备
+    CONFIG_SERIAL_MFD_HSU is not set
+    CONFIG_SERIAL_CORE=y 
+    #仅仅配置串口内核，其他的串口设备不给予支持
     # CONFIG_SERIAL_JSM is not set
     # CONFIG_SERIAL_SCCNXP is not set
     # CONFIG_SERIAL_TIMBERDALE is not set
@@ -54,7 +55,7 @@
     CONFIG_DEVPORT=y
     # CONFIG_XILLYBUS is not set
 ##I2C support的配置
-    #
+    
     # I2C support
     #用于感知硬件状态，比如温度，风扇转速。
     I2C是Philips极力推动的微控制应用中使用的低速串行总线协议。
@@ -283,10 +284,7 @@
     # CONFIG_FUSE_FS is not set ：FUSE（Filesystem in Userspace），允许在用户空间实现一个文件系统，如果打算开发一个自己的文件系统或使用一个机遇FUSE的文件系统，可以打开，这里不设置。
     # CONFIG_OVERLAY_FS is not set
     
-    #
-    # Caches
-    #
-    # CONFIG_FSCACHE is not set
+
 <h1 id="2">实验中遇到的问题及解决办法</h1>
  [2.实验中遇到的问题及解决办法](#2)
 ###问题一：make menuconfig curses.h：No such file or directory
