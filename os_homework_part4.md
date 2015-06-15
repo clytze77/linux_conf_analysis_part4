@@ -56,13 +56,14 @@
 ##I2C support的配置
     
     I2C support
-    #用于感知硬件状态，比如温度，风扇转速。
-    I2C是Philips极力推动的微控制应用中使用的低速串行总线协议。
-    如果要支持Video For Linux，该项必选。这里不配置
+    #用于感知硬件状态，比如温度，风扇转速。 
     CONFIG_I2C is not set
+    #I2C是Philips极力推动的微控制应用中使用的低速串行总线协议。如果要支持Video For Linux，该项必选。这里不配置
     CONFIG_SPI is not set
+    #SPI总线协议
     CONFIG_SPMI is not set
     CONFIG_HSI is not set
+    #以上均是各种总线协议
     
     
     PPS support 
@@ -80,35 +81,40 @@
     CONFIG_PPS_CLIENT_GPIO is not set
     
    
-    PPS generators support
+   
     
 ##PTP clock support的配置  
     
     PTP clock support
-    
+    #PTP时钟支持
     CONFIG_PTP_1588_CLOCK=y
-    --PTP（Precision Time Protocol，精确时间协议）是一个时间同步的协议，1588是网络测量和控制
-    系统的精密时钟同步协议标准，采用PTP协议，这里的配置PTP时钟，是为了网络通信中，保持设备的时间和频率同步。
-    
-    Enable PHYLIB and NETWORK_PHY_TIMESTAMPING to see the additional clocks.
+    #PTP（Precision Time Protocol，精确时间协议）是一个时间同步的协议，1588是网络测量和控制
+    #系统的精密时钟同步协议标准，采用PTP协议，这里的配置PTP时钟，是为了网络通信中，保持设备的时间和频率同步。
+   
     
     CONFIG_PTP_1588_CLOCK_PCH is not set
+    #1588是一个精准时钟协议
     CONFIG_ARCH_WANT_OPTIONAL_GPIOLIB=y 
-    --使用gpiolib并把它编译进内核。GPIO（“通用目的输入/输出端口”）是一个灵活的软件控制的数字信号，用于控制输入输出。
+    #使用gpiolib并把它编译进内核。GPIO（“通用目的输入/输出端口”）是一个灵活的软件控制的数字信号，用于控制输入输出。
     CONFIG_GPIOLIB is not set
     CONFIG_W1 is not set
     CONFIG_POWER_SUPPLY is not set
     CONFIG_POWER_AVS is not set
+    #以上两条与供电能源相关
     CONFIG_HWMON is not set
+    #传感器
     CONFIG_THERMAL is not set
+    #保温功能
     CONFIG_WATCHDOG is not set
-    CONFIG_SSB_POSSIBLE=y --？？？？
+    #PTP的监控系统
+    CONFIG_SSB_POSSIBLE=y 
+    #此选项为呼叫功能
 ##Sonics Silicon Backplane的配置    
     
     # Sonics Silicon Backplane
     
     CONFIG_SSB is not set
-    CONFIG_BCMA_POSSIBLE=y --？？
+    CONFIG_BCMA_POSSIBLE=y 
     
     
     Broadcom specific AMBA
@@ -153,15 +159,18 @@
     Frame buffer Devices
     #帧缓冲器设备
     CONFIG_FB is not set
-    CONFIG_BACKLIGHT_LCD_SUPPORT is not set 灯背后照片设置，不需要
-    CONFIG_VGASTATE is not set 显示状态不需要配置
+    CONFIG_BACKLIGHT_LCD_SUPPORT is not set 
+    #灯背后照片设置
+    CONFIG_VGASTATE is not set 
+    #显示状态不需要配置
     
     
     Console display driver support
     
     CONFIG_VGA_CONSOLE=y
     CONFIG_VGACON_SOFT_SCROLLBACK is not set
-    CONFIG_DUMMY_CONSOLE=y --控制台演示驱动，设置虚拟演示台的宽度与长度分别为80和25.
+    CONFIG_DUMMY_CONSOLE=y 
+    #控制台演示驱动，设置虚拟演示台的宽度与长度分别为80和25.
     CONFIG_DUMMY_CONSOLE_COLUMNS=80
     CONFIG_DUMMY_CONSOLE_ROWS=25
     CONFIG_SOUND is not set
@@ -245,17 +254,25 @@
 ##PHY Subsystem的配置     
     
      PHY Subsystem
-     PHY ( 物理层控制芯片)
+     PHY 
+     #( 物理层控制芯片) ，以太网PHY对应OSI模型的物理层，物理层定义了数据传送与接收所需要的电与光信号、线路状态、时钟基准、数      #据编码和电路等，并向数据链路层设备提供标准接口
+
      CONFIG_GENERIC_PHY is not set
+     #PHY的一般设置
      CONFIG_BCM_KONA_USB2_PHY is not set
+     #PHY的模块控制
      CONFIG_POWERCAP is not set
+     #PHY的电源控制，用于模式恢复，需要复位
      CONFIG_MCB is not set
+     #PHY内存控制块信息
      CONFIG_THUNDERBOLT is not set
+     #PYH对于意外处理的设置
     
     
      Android
     
      CONFIG_ANDROID is not set
+     #与Android相关的设置都不要
     
     
      Firmware Drivers 固件驱动
