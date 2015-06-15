@@ -215,18 +215,26 @@
     
 ##时钟源驱动配置    
     
-     Clock Source drivers --时钟源驱动配置
+     Clock Source drivers 
+     #时钟源驱动配置，一般有两个功能(1)定时触发中断；(2)维护和读取当前时间。
     
-    CONFIG_CLKSRC_I8253=y  --时钟频率
-    CONFIG_CLKEVT_I8253=y  --计数时钟clkevt，计数模式时的外部计数脉冲信号。
+    CONFIG_CLKSRC_I8253=y 
+    #时钟频率
+    CONFIG_CLKEVT_I8253=y
+    #计数时钟clkevt，计数模式时的外部计数脉冲信号。
     CONFIG_CLKBLD_I8253=y
-     CONFIG_ATMEL_PIT is not set
-     CONFIG_SH_TIMER_CMT is not set
-     CONFIG_SH_TIMER_MTU2 is not set
-     CONFIG_SH_TIMER_TMU is not set
-     CONFIG_EM_TIMER_STI is not set
-     CONFIG_MAILBOX is not set
-     CONFIG_IOMMU_SUPPORT is not set
+    #另一种计数时钟
+    CONFIG_ATMEL_PIT is not set
+    #ATMEL芯片
+    CONFIG_SH_TIMER_CMT is not set
+    CONFIG_SH_TIMER_MTU2 is not set
+    CONFIG_SH_TIMER_TMU is not set
+    CONFIG_EM_TIMER_STI is not set
+    以上四条均为内核里的定时器
+    CONFIG_MAILBOX is not set
+    #与邮箱计时相关
+    CONFIG_IOMMU_SUPPORT is not set
+    #开启了IOMMU(CONFIG_IOMMU_SUPPORT)支持
     
     
      Remoteproc drivers
