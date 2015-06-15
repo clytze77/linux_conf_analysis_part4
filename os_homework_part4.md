@@ -225,9 +225,11 @@
      CONFIG_VIRT_DRIVERS is not set
 ##virtio网卡配置驱动的配置   
     
-     Virtio drivers --virtio网卡配置驱动
+     Virtio drivers 
+     #virtio网卡配置驱动
     
      CONFIG_VIRTIO_PCI is not set
+     #关于virtio网卡的总线
      CONFIG_VIRTIO_MMIO is not set
     
     
@@ -276,15 +278,22 @@
      SOC (System On Chip) specific Drivers
     
      CONFIG_SOC_TI is not set
+     #系统级芯片
      CONFIG_PM_DEVFREQ is not set
      CONFIG_EXTCON is not set
+     #事件管理器控制寄存器
      CONFIG_MEMORY is not set
+     #内存设置
      CONFIG_IIO is not set
+     #全称是 Industrial I/O subsystem
      CONFIG_NTB is not set
      CONFIG_VME_BUS is not set
+     #VME接口电路
      CONFIG_PWM is not set
+     #PWM是一种对模拟信号电平进行数字编码的方法
      CONFIG_IPACK_BUS is not set
      CONFIG_RESET_CONTROLLER is not set
+     #重置信号
      CONFIG_FMC is not set
 ##PHY Subsystem的配置     
     
