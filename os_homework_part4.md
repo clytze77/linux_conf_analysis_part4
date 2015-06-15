@@ -122,26 +122,43 @@
     CONFIG_BCMA is not set
     
     
-    Multifunction device drivers --不使用多功能设备
-    
+    Multifunction device drivers          
+   #多功能设备驱动，指的是在单片集成电路上切入一些其他功能的设备
+   #如个GPIO，触摸屏，键盘，电流调节器，电源管理芯片等
+   #为了缩减内核，该内核不添加任何其他的外部设备
+
      CONFIG_MFD_CORE is not set
+     #多功能显示器内核
      CONFIG_MFD_CS5535 is not set
+     #型号为CS5535
      CONFIG_MFD_CROS_EC is not set
      CONFIG_HTC_PASIC3 is not set
+     #热传导功能器设备
      CONFIG_LPC_ICH is not set
+     #线性功率控制器
      CONFIG_LPC_SCH is not set
      CONFIG_MFD_JANZ_CMODIO is not set
+     #多功能显示器声音控制器
      CONFIG_MFD_KEMPLD is not set
+     #通用输入输出的配置器
      CONFIG_MFD_RDC321X is not set
+     
      CONFIG_MFD_RTSX_PCI is not set
+     #外接插口的配置
      CONFIG_MFD_SM501 is not set
      CONFIG_ABX500_CORE is not set
+     #内核映像文件配置
      CONFIG_MFD_SYSCON is not set
+     #多功能显示器的系统配置器
      CONFIG_MFD_TI_AM335X_TSCADC is not set
+     #多功能显示器触摸屏的配置
      CONFIG_MFD_TMIO is not set
      CONFIG_MFD_VX855 is not set
+     #型号VX855多功能显示器配置
      CONFIG_REGULATOR is not set
+     #调节器设备驱动
      CONFIG_MEDIA_SUPPORT is not set
+     #媒体设备支持
 ##Graphics support 的配置    
     
     Graphics support --图形支持，支持VGA接口，最多使用的GPU为16
